@@ -112,7 +112,7 @@ public class MyDB extends SQLiteOpenHelper {
                         String tempx = (++j) + ":" + cursor.getDouble(cursor.getColumnIndex(Accel_X + i));
                         String tempy = (++j) + ":" + cursor.getDouble(cursor.getColumnIndex(Accel_Y + i));
                         String tempz = (++j) + ":" + cursor.getDouble(cursor.getColumnIndex(Accel_Z + i));
-                        mActivityRow.append(" " + tempx + " " + " " + tempy + " " + tempz);
+                        mActivityRow.append(" " + tempx + " " + tempy + " " + tempz);
                     }
                     Log.d(TAG,mActivityRow.toString());
                     writer.write(mActivityRow.toString());
