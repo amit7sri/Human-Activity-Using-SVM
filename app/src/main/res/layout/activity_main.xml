@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="group22.android.com.assign3.MainActivity">
+
+
+    <Button
+        android:id="@+id/walking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:elevation="7dp"
+        android:fontFamily="serif"
+        android:onClick="onWalkingClick"
+        android:text="Walking"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/classify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/walking"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/walking"
+        android:layout_marginBottom="33dp"
+        android:elevation="7dp"
+        android:fontFamily="serif"
+        android:onClick="onClassifyClick"
+        android:text="Classify"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/train"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eating"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:elevation="7dp"
+        android:fontFamily="serif"
+        android:onClick="onTrainingClicked"
+        android:text="Train"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/eating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/running"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:elevation="7dp"
+        android:fontFamily="serif"
+        android:onClick="onEatingClick"
+        android:text="Eating"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/running"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/walking"
+        android:layout_alignRight="@+id/walking"
+        android:layout_below="@+id/walking"
+        android:layout_marginTop="39dp"
+        android:elevation="7dp"
+        android:fontFamily="serif"
+        android:onClick="onRunningClick"
+        android:text="Running"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/walking_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/running"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:text="Walking count" />
+
+    <TextView
+        android:id="@+id/running_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/running"
+        android:layout_alignEnd="@+id/walking_count"
+        android:layout_alignRight="@+id/walking_count"
+        android:layout_marginBottom="15dp"
+        android:text="Running count" />
+
+    <TextView
+        android:id="@+id/eating_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eating Count"
+        android:layout_alignBaseline="@+id/eating"
+        android:layout_alignBottom="@+id/eating"
+        android:layout_toRightOf="@+id/running"
+        android:layout_toEndOf="@+id/running" />
+
+    <TextView
+        android:id="@+id/accuracytv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accuracy"
+        android:layout_alignBaseline="@+id/train"
+        android:layout_alignBottom="@+id/train"
+        android:layout_alignLeft="@+id/eating_count"
+        android:layout_alignStart="@+id/eating_count" />
+
+    <TextView
+        android:id="@+id/classifytv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/classify"
+        android:layout_alignEnd="@+id/accuracytv"
+        android:layout_alignRight="@+id/accuracytv"
+        android:layout_marginBottom="12dp"
+        android:text="Classify" />
+
+
+</RelativeLayout>
